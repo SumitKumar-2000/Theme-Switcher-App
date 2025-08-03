@@ -18,7 +18,7 @@ const Sidebar = () => {
 
   return (
     <Container
-      className={`flex-col max-sm:absolute top-0 left-0 h-full min-w-[250px] bg-white p-0 z-100 transition-transform duration-300 ease-in-out shadow-md
+      className={`flex-col max-sm:absolute top-0 left-0 h-full min-w-[250px] bg-primary-foreground p-0 z-100 transition-transform duration-300 ease-in-out shadow-md
         ${isSidebarOpen ? "translate-x-0" : "translate-x-[-250px]"} `}
     >
       <section className="flex items-center justify-between h-[10vh] shadow-md p-2">
@@ -40,12 +40,12 @@ const Sidebar = () => {
             key={nav.code}
             onClick={handleSidebarToggle}
           >
-            <Container className={"p-0 gap-2"}>
+            <Container className={"p-0 gap-2 items-center"}>
               <Icon
                 name={nav.logoName}
                 size={screenSize === "screenXs" ? 24 : 18}
               />
-              <p className="max-sm:text-xl">{nav.label}</p>
+              <p className="max-sm:text-xl text-primary-foreground">{nav.label}</p>
             </Container>
           </Link>
         ))}

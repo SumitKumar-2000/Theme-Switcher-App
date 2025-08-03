@@ -3,7 +3,7 @@ import React from 'react'
 
 const Title = ({children, className}) => {
   return (
-    <h1 className={Cn("text-2xl font-bold", className)}>
+    <h1 className={Cn("text-2xl font-bold text-primary-foreground", className)}>
       {children}
     </h1>
   )

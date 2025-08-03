@@ -1,21 +1,5 @@
 @import "tailwindcss";
-
-:root {
-    --border-color: #edeef1;
-    --danger-color: #ff5c75;
-    --body-bg-color: #f3f4f7;
-    --warning-color: #ffbe0b;
-    --primary-color: #ffffff;
-    --success-color: #00c9a7;
-    --secondary-color: #202020;
-    --hover-secondary-color: #333333;
-    --input--bg-color: #fbfbff;
-    --input--border-color: #b7b7b7;
-    --input--text-color: #222222;
-    --container-bg-color: #ffffff;
-    --button--text-color: #ffffff;
-    --scrollbar-color: #333333;
-  }
+@import "./theme.css";
 
   /* ----- SCROLLBAR CSS ----- */
 ::-webkit-scrollbar {
@@ -49,12 +33,12 @@
 
   /* ---- MAIN ---- */
 
-  body {
-    color: var(--secondary-color);
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--body-bg-color);
+  body { 
+    font-family: var(--font-family); 
+    background-color: var(--color-primary); 
+    color: var(--color-foreground); 
   }
+
 
   .input{
     @apply text-[var(--secondary-color)] bg-[var(--body--bg-color)] border border-[var(--input--border-color)] focus:border-gray-700 outline-none relative rounded-xs disabled:bg-gray-100 disabled:pointer-events-none w-full;
@@ -102,21 +86,21 @@
 }
 
 .dropdown-toggle{
-    @apply min-w-fit h-[26px] flex items-center justify-center px-2 font-semibold hover:bg-[#eee] rounded-md cursor-pointer;
+    @apply min-w-fit h-[26px] flex items-center justify-center px-2 font-semibold bg-secondary rounded-md cursor-pointer;
 }
 
 .dropdown-menu--container{
-    @apply absolute top-8 right-0 bg-white rounded-md py-2 border shadow-sm flex flex-col w-fit z-20;
+    @apply absolute top-8 right-0 bg-secondary-foreground rounded-md py-2 border shadow-sm flex flex-col w-fit z-20;
 }
 
 .dropdown-menu--item{
-    @apply min-w-[100px] flex items-center px-2 py-1 text-[#444444] whitespace-nowrap gap-2 max-sm:text-xs;
+    @apply min-w-[100px] flex items-center px-2 py-1 text-secondary-foreground whitespace-nowrap gap-2 max-sm:text-xs;
 }
 
 .dropdown-menu--item-hover{
-    @apply hover:bg-[#eee]
+    @apply hover:bg-accent-foreground
 }
 
 .dropdown-menu--item-active{
-    @apply bg-[#E5F2F9]
+    @apply bg-primary-foreground
 }

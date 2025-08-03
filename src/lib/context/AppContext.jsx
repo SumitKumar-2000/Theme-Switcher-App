@@ -13,6 +13,7 @@ function getWidthSize(width) {
 
 const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
+  const [theme, setTheme] = React.useState(localStorage.getItem('theme') || 'default');
   const [screenSize, setScreenSize] = React.useState(
     getWidthSize(window.innerWidth)
   );
@@ -37,7 +38,14 @@ const AppProvider = ({ children }) => {
     }
   }, [screenSize]);
 
+  React.useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
   const value = {
+    theme,
+    setTheme,
     screenSize,
     isSidebarOpen,
     toggleSidebar,

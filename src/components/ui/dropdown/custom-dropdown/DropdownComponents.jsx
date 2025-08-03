@@ -10,9 +10,11 @@ export function Toggle({ children = "", className = "" }) {
     <button
       type="button"
       onClick={toggleDropdown}
-      className={Cn(`dropdown-toggle`, className)}
+      className={Cn(`dropdown-toggle gap-2`, className)}
     >
-      {`${children} ${active}`}
+
+      {children}
+      <p>{active}</p>
       <AppIcon
         size={15}
         name={"ChevronRight"}
@@ -34,14 +36,24 @@ export function Menu({ children, className = "" }) {
   );
 }
 
-export function Item({ children, className = "", ...props }) {
+export function Item({ children, className = "", action, ...props }) {
   const { active, setActive } = useDropdownCtx();
   const isActive = props.value && active === props.value;
+
+  const handleClick = () => {
+    if (props.value) {
+      setActive(props.value);
+    }
+
+    if (typeof action === "function") {
+      action(props.value); // pass the value to action
+    }
+  };
 
   return (
     <button
       type="button"
-      onClick={() => setActive(props.value)}
+      onClick={handleClick}
       className={Cn(
         className,
         "dropdown-menu--item",
