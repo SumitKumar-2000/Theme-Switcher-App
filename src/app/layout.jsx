@@ -1,16 +1,18 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "@components/layout/Navbar"
-import Footer from "@components/layout/Footer"
+import Sidebar from "@/components/layout/Sidebar";
 
 const RootLayout = () => {
   return (
     <React.Fragment>
-      <Navbar />
-      <main className="h-[90vh]">
-        <Outlet />
+      <main className="h-[100vh] flex relative w-full">
+        <Sidebar/>
+        <section className="w-full">
+          <Navbar />
+          <Outlet/>
+        </section>
       </main>
-      <Footer />
     </React.Fragment>
   );
 };

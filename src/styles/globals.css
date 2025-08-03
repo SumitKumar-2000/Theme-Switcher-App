@@ -95,3 +95,28 @@
   .form{
     @apply p-4 max-sm:w-full w-[350px] bg-[var(--primary-color)] flex justify-center items-center flex-col gap-4
   }
+
+/* dropdown css */
+.dropdown-container{
+  @apply w-fit relative;
+}
+
+.dropdown-toggle{
+    @apply min-w-fit h-[26px] flex items-center justify-center px-2 font-semibold hover:bg-[#eee] rounded-md cursor-pointer;
+}
+
+.dropdown-menu--container{
+    @apply absolute top-8 right-0 bg-white rounded-md py-2 border shadow-sm flex flex-col w-fit z-20;
+}
+
+.dropdown-menu--item{
+    @apply min-w-[100px] flex items-center px-2 py-1 text-[#444444] whitespace-nowrap gap-2 max-sm:text-xs;
+}
+
+.dropdown-menu--item-hover{
+    @apply hover:bg-[#eee]
+}
+
+.dropdown-menu--item-active{
+    @apply bg-[#E5F2F9]
+}
