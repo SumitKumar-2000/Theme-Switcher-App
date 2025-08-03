@@ -1,12 +1,27 @@
-# React + Vite
+# 🎨 Multi-Theme Switcher App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based web application that allows users to switch between three distinct UI themes. Each theme changes not only the colors but also the font styles, layout structure, spacing, and overall component design — without relying on external UI libraries like DaisyUI, Material UI, or Ant Design.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🧭 **Multi-page app** with routing (Home, About, Contact)
+- 🎨 **3 complete themes** with:
+  - Custom colors
+  - Unique layouts (e.g., sidebar, grid)
+  - Fonts: Inter, Merriweather, Pacifico
+  - Spacing and structural changes
+- 💾 **Persistent theme** using localStorage
+- ⚛️ **React Context API** for global theme state
+- 📱 **Responsive design** (mobile-first with Tailwind CSS)
+- 🧠 **Dynamic layouts** rendered per theme
+- 💡 **Animations** while switching themes
+- 📦 Optional API call to [Fake Store API](https://fakestoreapi.com/products)
 
-## Expanding the ESLint configuration
+## 🖥️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (with Hooks)
+- Tailwind CSS (with custom CSS variables)
+- React Router DOM
+- Google Fonts
+- Fake Store API
+- No UI libraries (100% custom)
