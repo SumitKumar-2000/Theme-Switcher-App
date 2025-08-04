@@ -37,6 +37,8 @@
     font-family: var(--font-family); 
     background-color: var(--color-secondary); 
     color: var(--color-primary-foreground); 
+    transition-property: all;
+    transition-duration: 0.4s;
   }
 
 
