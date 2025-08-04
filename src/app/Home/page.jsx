@@ -1,3 +1,4 @@
+import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Title from "@/components/ui/Title";
 import Container from "@/components/wrapper/Container";
@@ -18,15 +19,23 @@ const HomePage = () => {
       <Title>Check This Out.</Title>
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-y-scroll max-h-[80vh]">
         {products.map((product) => (
-          <Card key={product.id}>
+          <Card key={product.id} className="flex flex-col">
             <img
               src={product.image}
               alt={product.title}
               loading="lazy"
               className="w-full h-48 object-contain mb-2"
             />
-            <Card.Title className="text-primary-foreground font-semibold">{product.title}</Card.Title>
-            <Card.Content className="text-secondary-foreground">${product.price}</Card.Content>
+            <Card.Title className="text-primary-foreground font-semibold">
+              {product.title}
+            </Card.Title>
+            <Card.Content className="text-secondary-foreground">
+              ${product.price}
+            </Card.Content>
+
+            <div className="mt-4 flex justify-end mt-auto">
+              <Button>Buy Now</Button>
+            </div>
           </Card>
         ))}
       </section>

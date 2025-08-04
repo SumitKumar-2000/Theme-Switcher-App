@@ -4,6 +4,7 @@ import Navbar from "@components/layout/Navbar"
 import Sidebar from "@/components/layout/Sidebar";
 
 const RootLayout = () => {
+  
   return (
     <React.Fragment>
       <main className="h-[100vh] flex relative w-full">
