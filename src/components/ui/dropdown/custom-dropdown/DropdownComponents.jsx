@@ -46,7 +46,7 @@ export function Item({ children, className = "", action, ...props }) {
     }
 
     if (typeof action === "function") {
-      action(props.value); // pass the value to action
+      action(props.value); 
     }
   };
 
@@ -57,7 +57,7 @@ export function Item({ children, className = "", action, ...props }) {
       className={Cn(
         className,
         "dropdown-menu--item",
-        isActive ? "bg-[#E5F2F9]" : "bg-transparent hover:bg-[#eee]"
+        isActive ? "bg-accent text-accent-foreground" : "bg-transparent hover:bg-secondary text-primary-foreground"
       )}
       {...props}
     >

@@ -35,8 +35,8 @@
 
   body { 
     font-family: var(--font-family); 
-    background-color: var(--color-primary); 
-    color: var(--color-foreground); 
+    background-color: var(--color-secondary); 
+    color: var(--color-primary-foreground); 
   }
 
 
@@ -82,7 +82,7 @@
 
 /* dropdown css */
 .dropdown-container{
-  @apply w-fit relative;
+  @apply w-fit relative border border-border;
 }
 
 .dropdown-toggle{
@@ -90,17 +90,9 @@
 }
 
 .dropdown-menu--container{
-    @apply absolute top-8 right-0 bg-secondary-foreground rounded-md py-2 border shadow-sm flex flex-col w-fit z-20;
+    @apply absolute top-8 right-0 bg-primary rounded-md py-2 border border-border shadow-sm flex flex-col w-fit z-20;
 }
 
 .dropdown-menu--item{
-    @apply min-w-[100px] flex items-center px-2 py-1 text-secondary-foreground whitespace-nowrap gap-2 max-sm:text-xs;
-}
-
-.dropdown-menu--item-hover{
-    @apply hover:bg-accent-foreground
-}
-
-.dropdown-menu--item-active{
-    @apply bg-primary-foreground
+    @apply min-w-[100px] flex items-center px-2 py-1 whitespace-nowrap gap-2 max-sm:text-xs;
 }

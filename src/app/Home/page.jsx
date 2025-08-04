@@ -26,7 +26,7 @@ const HomePage = () => {
               className="w-full h-48 object-contain mb-2"
             />
             <Card.Title className="text-primary-foreground font-semibold">{product.title}</Card.Title>
-            <Card.Content className="text-gray-600">${product.price}</Card.Content>
+            <Card.Content className="text-secondary-foreground">${product.price}</Card.Content>
           </Card>
         ))}
       </section>

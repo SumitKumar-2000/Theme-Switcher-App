@@ -4,7 +4,7 @@ import React from 'react';
 
 const Card = ({ children, className = '' }) => {
   return (
-    <div className={Cn(`rounded-lg shadow-md p-4 transition-all duration-300 ${className}`)}>
+    <div className={Cn(`rounded-lg shadow-md p-4 transition-all bg-primary text-primary-foreground border border-border duration-300 ${className}`)}>
       {children}
     </div>
   );

@@ -7,7 +7,7 @@ const About = () => {
     <Container className={"flex-col"}>
       <Title>About the studio.</Title>
       <article className="my-4">
-        <p className="text-secondary-foreground">
+        <p className="text-primary-foreground">
           {" "}
           <strong className="text-primary-foreground">
             Multi-Theme Switcher App

@@ -9,7 +9,7 @@ const Navbar = () => {
   const { toggleSidebar, screenSize, setTheme } = useApp();
 
   return (
-    <nav className="h-[10vh] flex items-center justify-between pr-2 bg-primary w-full shadow-md">
+    <nav className="h-[10vh] flex items-center justify-between pr-2 bg-primary w-full shadow-md border-b border-border">
       <Container>
         {screenSize === "screenXs" ? (
           <button
