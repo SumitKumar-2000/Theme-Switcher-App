@@ -17,6 +17,57 @@ This is a React-based web application that allows users to switch between three 
 -  **Animations** while switching themes
 -  Optional API call to [Fake Store API](https://fakestoreapi.com/products)
 
+
+## 📁 Project Structure
+
+```
+eslint.config.js
+index.html
+jsconfig.json
+package.json
+vite.config.js
+public/
+  vite.svg
+src/
+  index.css
+  main.jsx
+  app/
+    layout.jsx
+    Home/
+      layout.jsx
+      page.jsx
+    About/
+      layout.jsx
+      page.jsx
+    Contact/
+      layout.jsx
+      page.jsx
+    NotFound/
+      layout.jsx
+      Page.jsx
+  assets/
+    react.svg
+  components/
+    layout/
+      Footer.jsx
+      Navbar.jsx
+      Sidebar.jsx
+    ui/
+    wrapper/
+      PageWrapper.jsx
+      SuspenseWrapper.jsx
+  lib/
+    context/
+    hooks/
+    routes/
+      AppRoutes.jsx
+    utils/
+      Axios.js
+      Cn.js
+  styles/
+    globals.css
+```
+
 ## 🖥️ Tech Stack
 
 - React (with Hooks)
