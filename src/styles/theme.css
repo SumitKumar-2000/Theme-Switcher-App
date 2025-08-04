@@ -78,15 +78,15 @@
 }
 
 [data-theme='ocean'] {
-  --color-primary: #f8f8f8;
-  --color-primary-foreground: #09090b;
-  --color-secondary: #eeeeee;
-  --color-secondary-foreground: #cdcdce;
-  --color-accent: #0090b5;
+  --color-primary: #162455;
+  --color-primary-foreground: #b2dff9;
+  --color-secondary: #1A368B;
+  --color-secondary-foreground: #597CB9;
+  --color-accent: #13ECF3;
   --color-accent-foreground: #ffffff;
   --radius: 0.625rem;
   
-  --color-border: #e5e5e5;
+  --color-border: #132051;
       
   --color-info: #60a5fa;      
   --color-success: #10b981;   
