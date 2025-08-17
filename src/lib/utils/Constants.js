@@ -8,5 +8,5 @@ export const themes = [
     {code: "light", label: "Default"},  
     {code: "dark", label: "Dark"},  
     {code: "ocean", label: "Ocean"},  
-    {code: "corporate", label: "Corporate"},  
+    {code: "pastel", label: "Pastel"},  
 ]
