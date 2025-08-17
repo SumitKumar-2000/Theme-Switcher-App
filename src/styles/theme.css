@@ -97,3 +97,23 @@
   --layout-padding: 1rem;
 }
 
+[data-theme='pastel'] {
+  --color-primary: #f7f9fa;
+  --color-primary-foreground: #171717;
+  --color-secondary: #e6e7e8;
+  --color-secondary-foreground: #696969;
+  --color-accent: #e9d4ff;
+  --color-accent-foreground: #8000d9;
+  --radius: 0.4rem;
+
+  --color-border: #e6e7e8;
+
+  --color-info: #60a5fa;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  --font-family: 'Inter', sans-serif;
+  --layout-padding: 1rem;
+}
+
